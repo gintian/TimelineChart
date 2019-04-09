@@ -1,0 +1,64 @@
+.timeline-header {
+    width: 100%;
+    text-align: center;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 1);
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgba(0, 0, 0, 1);
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: rgba(0, 0, 0, 1);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 1);
+    border-collapse: collapse;
+}
+
+.timeline-header td {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 1);
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgba(0, 0, 0, 1);
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: rgba(0, 0, 0, 1);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 1);
+}
+
+.no-gutter {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutter > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.swimlane-title {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 1);
+}
+
+.swimlane-content {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 1);
+}
+
+.swimlane-item-single {
+    position: absolute;
+}
+
+.today {
+    width: 1px;
+    position: absolute;
+    background-color: rgba(0, 0, 204, 1);
+}
