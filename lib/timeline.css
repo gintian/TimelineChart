@@ -1,64 +1,66 @@
 .timeline-header {
-    width: 100%;
-    text-align: center;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: rgba(0, 0, 0, 1);
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: rgba(0, 0, 0, 1);
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: rgba(0, 0, 0, 1);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(0, 0, 0, 1);
-    border-collapse: collapse;
+  width: 100%; 
+  text-align: center;
+  border: 1px solid #000;
+  border-collapse: collapse;
 }
-
 .timeline-header td {
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: rgba(0, 0, 0, 1);
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: rgba(0, 0, 0, 1);
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: rgba(0, 0, 0, 1);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(0, 0, 0, 1);
+  border: 1px solid #000;
 }
-
 .no-gutter {
-    margin-right: 0;
-    margin-left: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
-
 .no-gutter > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
-
 .swimlane-title {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #000;
 }
-
 .swimlane-content {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #000;
 }
-
-.swimlane-item-single {
-    position: absolute;
+.swimlane-item {
+  position: absolute;
 }
-
 .today {
-    width: 1px;
-    position: absolute;
-    background-color: rgba(0, 0, 204, 1);
+  width: 1px;
+  position: absolute;
+  background-color: #00c;
+}
+.swimlane-item-label {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 11px;
+  line-height: normal;
+}
+.swimlane-item-single .swimlane-item-label {
+  left: 20px;
+  top: 0px;
+}
+.swimlane-item-range .swimlane-item-label {
+  left: 20px;
+  right: 20px;
+  top: 0px;
+  text-align: center;
+}
+.timeline-legend {
+  padding: 10px;
+}
+.timeline-legend-image {
+  width: 50px; 
+  display: inline-block; 
+  height: 25px;
+}
+.timeline-legend-title {
+  display: inline-block; 
+  height: 25px;
+}
+.timeline-legend-item {
+  cursor: pointer;
+}
+.timeline-disabled {
+  opacity: 0.3;
 }
