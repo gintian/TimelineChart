@@ -17,6 +17,12 @@
 #legend {
   padding-top: 20px;
 }
+.red {
+  color: #c00;
+}
+.blue {
+  color: #00c;
+}
 </style>
 </head>
 
@@ -91,13 +97,13 @@
 
     var classes = {
       milestone: {
-        image: 'images/SVG/rhombus_blue.svg',
         title: 'Regulatory milestone',
+        class: 'fas fa-tag red',
         width: 15,
         height: 15
       },  
       task: {
-        image: 'images/SVG/star_red.svg',
+        class: 'fas fa-tag blue',
         title: 'Task',
         width: 15,
         height: 15
