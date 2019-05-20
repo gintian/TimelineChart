@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" crossorigin="anonymous">
 <link rel="stylesheet" href="../lib/timeline.css">
+<link rel="stylesheet" href="../vendor/sfmx-assets/css/sfmx.min.css">
 <style>
 #chartdiv, #legend {
   width: 90%;
@@ -35,6 +36,7 @@
   <div id="legend"></div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../vendor/sfmx-assets/js/vendors/sfmx.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
         integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
         crossorigin="anonymous"></script>
@@ -72,7 +74,7 @@
           ,{date: '2019-10-01', title: 'task2 4', class: 'task'}
           ,{date: '2019-11-01', title: 'task2 5', class: 'stagegate'}
         ],
-        range: [{start: "2019-01-01", end: "2019-02-14", task: "2. Gathering requirements", class: 'activity_partial'}
+        range: [{start: "2019-01-01", end: "2019-02-14", task: "2. Gathering requirements", class: 'activity'}
                 ,{start: "2019-04-16", end: "2019-05-27", task: "2. Producing specifications", class: 'activity'}
                 ,{start: "2019-07-05", end: "2019-09-18", task: "2. Development", class: 'activity'}
                 ,{start: "2019-11-18", end: "2019-12-30", task: "2. Testing and QA", class: 'activity'}]
@@ -115,23 +117,15 @@
         height: 15
       },
       activity: {
-        pattern: 'images/SVG/arrows_components/arrow_middle_red.svg',
-        before: 'images/SVG/arrows_components/arrow_end_red.svg',
-        after: 'images/SVG/arrows_components/arrow_tip_red.svg',
+        color: '#ccc',
         title: 'Activity',
-        beforeWidth: 16,
-        beforeHeight: 15,
-        afterWidth: 14,
-        afterHeight: 15,
-        patternHeight: 15
+        height: 15
       },
       activity_partial: {
-        pattern: 'images/SVG/arrows_components/arrow_middle_red.svg',
-        after: 'images/SVG/arrows_components/arrow_tip_red.svg',
+        color: '#ccc',
         title: 'Activity',
-        afterWidth: 14,
-        afterHeight: 15,
-        patternHeight: 15,
+        height: 15,
+        hideTail: true,
         parentClass: 'activity'
       }
     };
