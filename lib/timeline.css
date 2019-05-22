@@ -47,13 +47,19 @@
   padding: 10px;
 }
 .timeline-legend-image {
-  width: 50px; 
+  width: 10%;
+  max-width: 25px;
   display: inline-block; 
   height: 25px;
 }
 .timeline-legend-title {
+  width: 90%;
   display: inline-block; 
   height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
 }
 .timeline-legend-item {
   cursor: pointer;
