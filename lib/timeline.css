@@ -17,9 +17,11 @@
 }
 .swimlane-title {
   border-bottom: 1px solid #000;
+  overflow: hidden;
 }
 .swimlane-content {
   border-bottom: 1px solid #000;
+  overflow: hidden;
 }
 .swimlane-item {
   position: absolute;
