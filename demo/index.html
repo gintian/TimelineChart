@@ -137,6 +137,14 @@
                                                                   showLabels: false,
                                                                   legendSelector: '#legend'
                                                                 });
+    chart.events.startSwimlaneResize = function() {
+      console.log('start resize');
+    };
+
+    chart.events.stopSwimlaneResize = function() {
+      console.log('stop resize');
+    };
+
     $("#toggle-labels").change(function(){
       if(this.checked){
         chart.showLabels();
