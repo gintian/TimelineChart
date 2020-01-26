@@ -137,12 +137,32 @@
                                                                   showLabels: false,
                                                                   legendSelector: '#legend'
                                                                 });
-    chart.events.startSwimlaneResize = function() {
-      console.log('start resize');
+    chart.events.swimlaneResize = function(event, ui) {
+        $(window).on("scroll", function() {
+          var scrollHeight = $(document).height();
+          var scrollPosition = $(window).height() + $(window).scrollTop();
+          var bottom = false;
+          var top = false;
+          var middle = false;
+            if (scrollHeight - scrollPosition === 0) {
+                bottom = true;
+            }
+          if ($(window).scrollTop() === 0) {
+                top = true;
+            }
+          middle = !top && !bottom;
+          if(!bottom) {
+            $('html, body').css('overflow', 'hidden');
+          } else {
+            $('html, body').css('overflow', 'auto');
+          }
+        });
+        //$(window).unbind('scroll');
     };
 
-    chart.events.stopSwimlaneResize = function() {
-      console.log('stop resize');
+    chart.events.stopSwimlaneResize = function(event, ui) {
+        $(window).unbind('scroll');
+        $('html, body').css('overflow', 'auto');
     };
 
     $("#toggle-labels").change(function(){
